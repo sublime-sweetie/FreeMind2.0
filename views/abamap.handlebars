@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FreeMind Resource Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <header>
+    <h1> FreeMind </h1>
+    <nav class=" green lighten-3">
+            <ul class="right">
+                <li><a href="/public/html/home.html"> Home</a></li>
+                <li><a href="/public/html/journal.html"> Journal </a></li>
+                <li><a href="/public/html/map.html">Provider finder Maps</a></li>                
+                <li><a href="/public/html/faq.html"> FAQ Page </a></li>
+                 <!--we need to make sure that the user is logged in, in order to view the maps and journal-->
+                <li><a href="/public/html/login.html"> Log in </a></li>
+                <li><a href="/public/html/signup.html"> Sign Up</a></li>
+            </ul>
+    </nav>
+</header>
+  <body>
+      <!-- second nav bar revealed at 390px -->
+      <nav class="burgerbar">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+      </nav>
+   </header>
+   <main>
+    <div id="container">
+      <div id="map" ></div>
+      <div id="demo" ></div>
+      <div id="sidebar" class="results">
+        <h2>ABA Providers near you:</h2>
+        <ul id="places"></ul>
+        <button style="font-size:24px;color:blue" id="more">Load More <i class="material-icons">local_pharmacy</i></button>
+      </div>
+    </div>
+  </main>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn-gvMvru5lgLwSVtR1rrejaRC3I1yaHU&libraries=geometry,places&callback=initMap">
+</script>
+<script rel="module" src="/controllers/abamap.js"></script>
+  </body>
+</html>

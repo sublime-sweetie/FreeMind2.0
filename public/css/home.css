@@ -1,0 +1,75 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    
+}
+
+ 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-size: 200%;
+}
+  
+h2 {
+    margin: 2% 0;
+    font-size: 250%;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    
+}
+  
+nav a {
+    color: #b9c6ae;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    color: #fff;
+}
+  
+main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2% auto;
+}
+
+  article p {
+    margin: 2% 0;
+    font-size: 110%;
+}
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
+photoContainer{
+background-size: contain;
+}
+
+mapCard{
+    display: flex;
+    align-items: flex-end;
+}
