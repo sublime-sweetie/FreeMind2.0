@@ -18,11 +18,8 @@ Users can log in and review their old journal enteries or serch the resource map
 ## Credits
 Faith Wallace: https://github.com/sublime-sweetie
 
-Jeniah Turner: https://github.com/turnerjeniah8
+Designs by :Jeniah Turner: https://github.com/turnerjeniah8
 
-Brandon Ochaeta : https://github.com/BOO720
-
-Bandon Littlejon: https://github.com/B-Litljon
 
 
 
