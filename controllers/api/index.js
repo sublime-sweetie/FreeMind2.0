@@ -1,7 +1,8 @@
 const router = require('express').Router();
-const apiRoutes = require('./api');
+const userRoutes = require('./userRoutes');
+const mapRoutes = require('./mapsRoutes');
 
-//--PREFIX ALL ROUTES DEFINED IN THE DIRECTORY WITH '/api'--\\
-router.use('/api', apiRoutes);
+router.use('/users', userRoutes);
+router.use('/map', mapRoutes);
 
 module.exports = router;

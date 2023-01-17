@@ -1,14 +1,15 @@
 const router = require('express').Router();
 
-// const apiRoutes = require('/api');
-const userRoutes = require('api/userRoutes');
 
+const userRoutes = require('./api/userRoutes');
+const homeRoutes= require('./homepageRoute')
+const mapRoutes = require('./mapsRoute')
 
 router.use('/users', userRoutes);
-// router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
 
-// router.use('/lmft', server);
-// router.use('/aba', server);
-// router.use('/lgbt', server);
 
+router.use('/abamap', mapRoutes);
+router.use('/lgbtmap', mapRoutes);
+router.use('/lmftmap', mapRoutes);
 module.exports = router;

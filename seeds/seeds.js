@@ -1,3 +1,7 @@
+const sequelize = require('../config/connection');
+const { User } = require('../models');
+
+const userData = require('./userData.js');
 //\\--SEED DATA--\\//
 router.post('/seed', (req, res) => {
     //\\--BULK BUILDER--\\//
