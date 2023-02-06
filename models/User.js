@@ -17,10 +17,10 @@ User.init(
       autoIncrement: true,
     },
     first_name: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     last_name: {
-      type: DataTypes.VARCHAR,
+      type: DataTypes.STRING,
     },
     password: {
       type: DataTypes.STRING,

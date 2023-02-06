@@ -38,7 +38,10 @@ const sess = {
   
   app.use(routes);
   
+
   sequelize.sync({ force: false }).then(() => {
-    app.listen(console.log(`Now listening. Visit http://localhost:${PORT} to see FreeMind Services!`));
+    app.listen(PORT, () =>
+      console.log(`Now listening. Visit http://localhost:${PORT} to use FreeMind Services!`)
+    );
   });
   
